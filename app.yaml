@@ -1,0 +1,9 @@
+kind: wasmer.io/App.v0
+name: mobile-store-backend
+owner: gharammmmm
+package: .
+debug: true
+
+capabilities:
+  database:
+    engine: mysql
