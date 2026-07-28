@@ -15,6 +15,6 @@ jobs:
       execute:
         command: php
         cli_args:
-          - artisan
+          - /app/artisan
           - migrate
           - --force
