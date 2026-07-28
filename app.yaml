@@ -7,3 +7,14 @@ debug: true
 capabilities:
   database:
     engine: mysql
+
+jobs:
+  - name: migrate-database
+    trigger: post-deployment
+    action:
+      execute:
+        command: php
+        cli_args:
+          - artisan
+          - migrate
+          - --force
